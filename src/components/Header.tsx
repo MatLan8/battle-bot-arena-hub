@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Trophy, Users, Star, DollarSign } from "lucide-react";
@@ -17,7 +16,7 @@ const Header: React.FC = () => {
               </span>
             </Link>
           </div>
-          
+
           <nav className="hidden md:flex items-center space-x-6">
             <Link to="/" className="battle-nav-link">
               Home
@@ -37,13 +36,13 @@ const Header: React.FC = () => {
             <Link to="/rules" className="battle-nav-link">
               Rules
             </Link>
+            <a href="http://localhost:8080/" className="nav-link">
+              Get your bot
+            </a>
           </nav>
-          
+
           <div className="flex items-center space-x-2">
-            <Link 
-              to="/register" 
-              className="battle-button flex items-center"
-            >
+            <Link to="/register" className="battle-button flex items-center">
               <Star size={18} className="mr-1" />
               Register
             </Link>
